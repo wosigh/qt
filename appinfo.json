@@ -1,0 +1,9 @@
+{
+	"title":    "Qt",
+	"type":     "web",
+	"main":     "index.html",
+	"id":       "net.griffin.qt",
+	"vendor":   "www.griffin.net",
+        "version":  "4.6.2",
+        "icon":     "icon.png"
+}

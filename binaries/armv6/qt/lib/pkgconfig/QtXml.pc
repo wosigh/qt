@@ -1,0 +1,16 @@
+prefix=/media/cryptofs/apps/usr/palm/applications/net.griffin.qt/qt
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtXml
+qt_config=lex yacc warn_on uic resources qt warn_on release incremental link_prl no_mocdepend release stl qt_no_framework cross_compile release shared dll embedded largefile stl precompile_header exceptions_off dylib create_prl link_prl depend_includepath QTDIR_build qt_install_headers qt warn_on depend_includepath qmake_cache target_qt hide_symbols create_libtool create_pc explicitlib moc thread shared dll
+moc_location=/home/darron/qt-everywhere-opensource-src-4.6.2/bin/moc
+uic_location=/home/darron/qt-everywhere-opensource-src-4.6.2/bin/uic
+
+Name: Qtxml
+Description: Qtxml Library
+Version: 4.6.2
+Libs: -L${libdir} -lQtXml 
+Libs.private: -L/lib/pre -L/usr/lib/pre -L/home/darron/qt-everywhere-opensource-src-4.6.2/lib  -lQtCore -L/lib/pre -L/usr/lib/pre -L/home/darron/qt-everywhere-opensource-src-4.6.2/lib -lGLES_CM -lGLESv2 -lIMGegl -lsrv_um -lpvr2d -lpthread   
+Cflags: -DQT_SHARED -I/media/cryptofs/apps/usr/palm/applications/net.griffin.qt/qt/include -I${includedir}
+Requires: QtCore
+

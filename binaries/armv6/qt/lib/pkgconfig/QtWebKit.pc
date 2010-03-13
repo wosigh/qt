@@ -1,0 +1,16 @@
+prefix=/media/cryptofs/apps/usr/palm/applications/net.griffin.qt/qt
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtWebKit
+qt_config=lex yacc uic resources qt release incremental link_prl no_mocdepend release stl qt_no_framework cross_compile release shared dll embedded largefile stl precompile_header exceptions_off dylib create_prl link_prl depend_includepath QTDIR_build building-libs depend_includepath embedded qt_install_headers qt warn_on depend_includepath qmake_cache target_qt hide_symbols create_libtool create_pc explicitlib link_pkgconfig no_debug_info moc thread shared dll
+moc_location=/home/darron/qt-everywhere-opensource-src-4.6.2/bin/moc
+uic_location=/home/darron/qt-everywhere-opensource-src-4.6.2/bin/uic
+
+Name: Qtwebkit
+Description: Qtwebkit Library
+Version: 4.6.2
+Libs: -L${libdir} -lQtWebKit 
+Libs.private: -L/lib/pre -L/usr/lib/pre -L/home/darron/qt-everywhere-opensource-src-4.6.2/lib  -lQtGui -L/lib/pre -L/usr/lib/pre -L/home/darron/qt-everywhere-opensource-src-4.6.2/lib -lQtNetwork -lQtCore -lGLES_CM -lGLESv2 -lIMGegl -lsrv_um -lpvr2d -lpthread   
+Cflags: -DQT_SHARED -I/media/cryptofs/apps/usr/palm/applications/net.griffin.qt/qt/include -I${includedir}
+Requires: QtCore QtGui QtNetwork
+
